@@ -118,7 +118,7 @@ let GID = 1;
                     </div>
 
                     <div class="action">
-                        <img src="assets/Beta.png_${localStorage.getItem("theme") == null ? 'black' : localStorage.getItem("theme") == 'light' ? 'black' : 'white'}" alt="" rtype="Beta" class="actionImage">
+                        <img src="assets/Beta_${localStorage.getItem("theme") == null ? 'black' : localStorage.getItem("theme") == 'light' ? 'black' : 'white'}.png" alt="" rtype="Beta" class="actionImage">
                     </div>
 
                     <div class="element">
