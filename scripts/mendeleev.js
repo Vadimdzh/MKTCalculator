@@ -23,8 +23,8 @@ function pickTextColorBasedOnBgColorAdvanced(bgColor, lightColor, darkColor) {
 
     const cwidth = canvas.width,
     cheight = canvas.height;
-
-    const response = await fetch("https://vadimdzh.github.io/MKTCalculator/assets/PeriodicTableJSON.json");
+    let PeriodicPath = "https://vadimdzh.github.io/MKTCalculator/assets/PeriodicTableJSON.json";
+    const response = await fetch(PeriodicPath);
     table = await response.json();
     const elements = table.elements;
 
