@@ -1,0 +1,86 @@
+.theme{
+    transition: 0.25s ease-out;
+}
+
+.theme__light{
+    background-color: white;
+    --calculator-background: #F5F5F5;
+    --calculator-button: #E6E6E6;
+    --calculator-button-active: gray;
+    --calculator-button-active-color: white;
+    --calculator-fields-background: white;
+    --calculator-field-border: lightgray;
+    --calculator-field-placeholder-color: gray;
+    
+    --calculator-drob-color: black;
+
+    --calculator-calc-btn-color: lightgray;
+    --calculator-calc-btn-textcolor: black;
+    --calculator-field-textcolor: black;
+
+    --fixedButtons-background: #F5F5F5;
+    --fixedBtn-bg-color: lightgray;
+    --fixedBtn-color: black;
+
+    --sidebar-color: black;
+    --sidebar-bg-color: white;
+    --sidebar-border-color: lightgray;
+    --header-bg-color: #F5F5F5;
+    --header-color: black;
+
+    --modal-background: white;
+    --modal-header-color: black;
+    --modal-link-color: royalblue;
+
+    --info-color: black;
+
+    --rd-color: lightgray;
+
+    --elementdata-block-border: gray;
+    --calcBtn-border: lightgray;
+    --calcBtn-color: black;
+    --element-color: black;
+    --calcBlock-color: black;
+}
+
+
+.theme__dark{
+    background-color: #1F1F1F;
+    --calculator-background: #343434;
+    --calculator-button: #0D0D0D;
+    --calculator-button-color: white;
+    --calculator-button-active: #020202;
+    --calculator-button-active-color: white;
+    --calculator-fields-background: #616161;
+    --calculator-field-placeholder-color: lightgray;
+    --calculator-field-border: lightgray;
+    --calculator-drob-color: white;
+    --calculator-field-textcolor: white;
+    --calculator-calc-btn-color: black;
+    --calculator-calc-btn-textcolor: white;
+
+    --fixedButtons-background: black;
+    --fixedBtn-bg-color: lightgray;
+    --fixedBtn-color: white;
+
+    --sidebar-color: white;
+    --sidebar-bg-color: black;
+    --sidebar-border-color: white;
+    --header-bg-color: black;
+    --header-color: white;
+
+
+    --modal-background: #343434;
+    --modal-header-color: white;
+    --modal-link-color: lightgray;
+
+    --info-color: white;
+
+    --rd-color: white;
+
+    --elementdata-block-border: white;
+    --calcBtn-border: black;
+    --calcBtn-color: white;
+    --element-color: white;
+    --calcBlock-color: white;
+}

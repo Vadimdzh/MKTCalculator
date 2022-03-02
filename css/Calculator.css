@@ -1,0 +1,134 @@
+
+.calcFormula{
+    margin-top: 15px;
+    /* border: 1px solid lightgray; */
+    display: block;
+    width: auto;
+    background: var(--calculator-background);
+    padding-bottom: 10px;
+}
+.calcFormula .buttons{
+    display: flex;
+}
+
+.calcFormula .buttons .btn{
+    width: 30px; height: 30px;
+    border: none;
+    background-color: var(--calculator-button);
+    transition: 0.25s ease-out;
+    /* padding: 10px; */
+    color: var(--calculator-button-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 0;
+}
+
+.calcFormula .buttons .btn:hover{
+    background-color: var(--calculator-button-active);
+    color: var(--calculator-button-active-color);
+}
+
+.calcFormula .buttons .btn.active{
+    background-color: var(--calculator-button-active);
+    color: var(--calculator-button-active-color);
+}
+
+.fields{
+    background: var(--calculator-fields-background);
+    padding: 10px;
+    /* margin-top: 10px; */
+    display: flex;
+    /* align-items: center; */
+    font-family: Verdana, sans-serif;
+    flex-wrap: wrap;
+    color: var(--calculator-drob-color);
+}
+
+.fields span.symbol{
+    display: grid;
+    place-content: center;
+    height: 40px;
+}
+
+.fields * {
+    margin-left: 15px;
+}
+
+.field{
+    width: 80px;
+    height: 40px;
+    border: none;
+    border: 1px solid var(--calculator-field-border);
+    color: var(--calculator-field-textcolor);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    font-size: 13px;
+    background: none;
+}
+
+.field:focus{
+    outline: none;
+}
+
+.field::placeholder{
+    color: var(--calculator-field-placeholder-color);
+}
+
+.drob{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: max-content;
+
+
+    width: auto;
+    height: auto;
+    
+}
+
+.drob div:first-child{
+    border-bottom: 1px solid var(--calculator-drob-color);
+    margin-bottom: 5px;
+}
+
+.drob div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-self: center;
+}
+
+.calcBtn{
+    margin-top: 10px;
+}
+
+.calcFormula input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+.calcFormula input[type=number] {
+-moz-appearance: textfield;
+}
+
+.calcFormula .calcBtn{
+    background: none;
+    border: 1px solid var(--calculator-calc-btn-color);
+    color: var(--calculator-calc-btn-textcolor);
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.25s ease-out;
+}
+
+.calcFormula .calcBtn:hover{
+    background: var(--calculator-calc-btn-color);
+}
+
+.info_{
+    color: var(--info-color);
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

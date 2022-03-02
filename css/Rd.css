@@ -1,0 +1,126 @@
+input[type="number"]{
+    border: 0;
+    background: none;
+    border: 1px solid var(--rd-color);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+
+    color: var(--calcBlock-color);
+
+}
+
+input::placeholder{
+    color: var(--calculator-field-placeholder-color);
+}
+
+.calcFormula input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.element{
+    display: grid;
+    grid-template-columns: 15px min-content;
+    width: auto;
+    height: 50px;
+    color: var(--element-color);
+}
+.elementData{
+    display: grid;
+    grid-template-rows: 20px;
+    font-size: 10px;
+    justify-self: end;
+    justify-content: center;
+    align-items: center;
+}
+
+.element .elementData .mass{
+    align-self: end;
+    margin: 0;
+}
+
+.element .elementData .periodicNumber{
+    margin: 0;
+}
+
+
+.elementSymbol{
+    justify-self: start;
+    align-self: center;
+    font-size: 30px;
+}
+.startElementData{
+    margin-top: 15px;
+    width: 80%;
+    border-bottom: 2px solid var(--elementdata-block-border);
+}
+
+.calcData{
+    max-height: 60vh;
+    overflow-y: auto;
+    width: 80%;
+}
+
+.calcBlock{
+    /* margin-top: 20px; */
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 2px solid var(--elementdata-block-border);
+    color: var(--calcBlock-color);
+}
+
+.elementData__inputs{
+    display: flex;
+    color: var(--calcBlock-color);
+}
+.elementData__inputs .elementData__group:last-child{
+    margin-left: 50px;
+}
+
+.previewElement{
+    margin-top: 20px;
+}
+
+.saveElementMain{
+    color: var(--calcBlock-color);
+}
+
+.calcBtn{
+    border: 1px solid var(--calcBtn-border);
+    background: none;
+    transition: 0.25s ease-out;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--calcBtn-color);
+}
+
+.calcBtn:hover{
+    background: var(--calcBtn-border);
+}
+
+.btn_{
+    border: 1px solid var(--calcBtn-border);
+    background: none;
+    transition: 0.25s ease-out;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--calcBtn-color);
+}
+
+.btn_:hover{
+    background: var(--calcBtn-border);
+}
